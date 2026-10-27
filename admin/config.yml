@@ -44,4 +44,4 @@ collections:
                   - { label: Nombre de la función, name: title, widget: string }
                   - { label: Explicación, name: body, widget: richtext, hint: 'Editor visual con texto, listas, enlaces e imágenes.' }
                   - { label: Consejo o aviso, name: tip, widget: text, required: false }
-                  - { label: Captura opcional, name: image, widget: image, required: false, allow_multiple: false }
+                  - { label: Captura opcional, name: image, widget: image, required: false }
