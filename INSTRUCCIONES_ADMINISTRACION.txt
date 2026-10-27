@@ -1,0 +1,51 @@
+ANTARES HELPER — CENTRO DE AYUDA EDITABLE
+Versión de la documentación: 1.1.71
+
+¿QUÉ SE INCLUYE?
+- Web pública con buscador y 14 secciones / 47 explicaciones originales.
+- Panel visual de edición en https://TU-SITIO.netlify.app/admin/
+- Edición de textos, apartados, orden, consejos y capturas mediante Sveltia CMS.
+- Publicación automática EN CUANTO el sitio esté conectado a GitHub + Netlify.
+
+IMPORTANTE: el panel de administración NO guarda cambios en Internet si solo subes el ZIP a Netlify Drop. Para guardar/publicar desde el navegador se requiere configurar GitHub y la autenticación por primera vez. No hay una clave predeterminada en este ZIP. El acceso de escritura corresponde a usuarios autorizados del repositorio.
+
+CONFIGURACIÓN INICIAL (UNA SOLA VEZ)
+1) Crea una cuenta en GitHub (https://github.com) o entra con la tuya.
+2) Crea un repositorio (por ejemplo, antares-centro-ayuda). Puede ser privado.
+3) Descomprime este ZIP y sube TODOS sus archivos y carpetas a la raíz del repositorio, respetando /admin y /content. No subas el ZIP como archivo único.
+4) Edita el archivo admin/config.yml: cambia TU_USUARIO/TU_REPOSITORIO por el propietario y nombre exactos del repositorio GitHub (ejemplo: miusuario/antares-centro-ayuda). Usa rama main.
+5) En Netlify, elige Add new project > Import an existing project > GitHub; autoriza y selecciona el repositorio. Deja Publish directory en . (raíz) y sin Build command (este sitio no requiere compilación). Si ya publicaste la web con Netlify Drop, puedes enlazar el repositorio a ese sitio desde la configuración de Netlify o crear un sitio nuevo con Git, conservando después el enlace que usarás en Antares.
+6) En GitHub ve a Settings > Developer settings > OAuth Apps > New OAuth App.
+   - Homepage URL: https://TU-SITIO.netlify.app
+   - Authorization callback URL: https://api.netlify.com/auth/done
+   Guarda el Client ID y genera un Client Secret. NUNCA coloques el secret en el ZIP, repositorio ni archivos del sitio.
+7) En Netlify: Project configuration > Security > OAuth > Authentication providers > Install Provider > GitHub. Introduce allí Client ID y Client Secret.
+8) Abre https://TU-SITIO.netlify.app/admin/ y selecciona Sign in with GitHub. Solo un usuario con permiso de escritura en el repositorio podrá modificar contenido.
+
+CÓMO EDITAR
+- Entra a /admin/, inicia sesión y abre Centro de Ayuda > Toda la documentación.
+- Edita títulos, descripciones, explicaciones y consejos. El campo "Explicación" es visual (rich text).
+- Agrega, elimina o reordena funciones y secciones desde los controles del editor.
+- Para insertar una captura, utiliza el campo opcional "Captura": el editor guardará el archivo en /media.
+- Guarda/Publica. El CMS crea un commit en GitHub. Netlify publicará automáticamente el cambio después de implementar el commit.
+- Abre la web pública y comprueba el cambio. La página recupera /content/guia.json actualizado.
+
+CONSEJOS Y SEGURIDAD
+- NO borres el campo ID de una sección existente (ej. 'chat', 'seguridad', 'colores'); sus enlaces dependen de él.
+- Usa imágenes propias sin nombres, correos ni información privada de contactos.
+- No publiques secretos de API ni credenciales en los textos/capturas.
+- La URL /admin/ es pública, pero GUARDAR contenido requiere autorización de escritura en GitHub. Para más privacidad puedes proteger también el sitio mediante los controles de Netlify (según tu plan).
+- Netlify Drop publica el sitio de lectura, pero NO habilita la publicación desde el CMS. Eso es una limitación de infraestructura, no un fallo del ZIP.
+- Puedes modificar el contenido manualmente en content/guia.json si necesitas realizar cambios antes de conectar GitHub.
+
+ARCHIVOS IMPORTANTES
+index.html, styles.css, app.js — web pública
+content/guia.json — todo el contenido editable
+admin/index.html — panel visual
+admin/config.yml — conexión al repositorio GitHub
+media/ — capturas e imágenes que agregues
+netlify.toml — configuración de publicación
+
+DOCUMENTACIÓN OFICIAL
+https://sveltiacms.app/en/docs/start
+https://sveltiacms.app/en/docs/backends/github

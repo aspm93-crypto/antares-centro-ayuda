@@ -1,0 +1,47 @@
+# yaml-language-server: $schema=https://unpkg.com/@sveltia/cms/schema/sveltia-cms.json
+# Antes de publicar, sustituye aspm93-crypto/antares-centro-ayuda por el repositorio GitHub conectado a Netlify.
+backend:
+  name: github
+  repo: aspm93-crypto/antares-centro-ayuda
+  branch: main
+  auth_methods: [oauth]
+
+media_folder: media
+public_folder: /media
+
+collections:
+  - name: centro_ayuda
+    label: Centro de Ayuda
+    icon: help
+    files:
+      - name: guia
+        label: Toda la documentación
+        file: content/guia.json
+        format: json
+        fields:
+          - { label: Versión mostrada, name: site_version, widget: string }
+          - { label: Etiqueta principal, name: hero_tag, widget: string }
+          - { label: Título principal, name: hero_title, widget: string }
+          - { label: Texto destacado del título, name: hero_accent, widget: string }
+          - { label: Introducción, name: hero_summary, widget: text }
+          - label: Secciones de ayuda
+            name: sections
+            widget: list
+            summary: '{{fields.title}}'
+            collapsed: true
+            fields:
+              - { label: Identificador (sin espacios), name: id, widget: string, hint: 'Mantener el ID para conservar los enlaces de Antares (por ejemplo: chat, seguridad, colores).' }
+              - { label: Icono o emoji, name: symbol, widget: string }
+              - { label: Etiqueta pequeña, name: eyebrow, widget: string }
+              - { label: Título, name: title, widget: string }
+              - { label: Descripción corta, name: summary, widget: text }
+              - label: Explicaciones
+                name: features
+                widget: list
+                summary: '{{fields.title}}'
+                collapsed: true
+                fields:
+                  - { label: Nombre de la función, name: title, widget: string }
+                  - { label: Explicación, name: body, widget: richtext, hint: 'Editor visual con texto, listas, enlaces e imágenes.' }
+                  - { label: Consejo o aviso, name: tip, widget: text, required: false }
+                  - { label: Captura opcional, name: image, widget: image, required: false, allow_multiple: false }
