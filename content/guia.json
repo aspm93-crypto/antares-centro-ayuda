@@ -77,12 +77,6 @@
           "body": "Marca en rojo conversaciones que encajan con los criterios configurados de atención pendiente.",
           "tip": "Consulta el chat antes de actuar: el color es una ayuda, no una garantía de que esté perdido.",
           "image": ""
-        },
-        {
-          "title": "🔵 Otros indicadores",
-          "body": "Algunas conversaciones muestran un indicador azul cuando reúnen condiciones de cartas disponibles u otras señales de seguimiento.",
-          "tip": "Los colores dependen de contadores y datos de TalkyTimes; si están desactualizados, recarga y revisa el diagnóstico.",
-          "image": ""
         }
       ]
     },
