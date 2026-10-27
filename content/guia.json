@@ -62,7 +62,7 @@
     {
       "id": "colores",
       "symbol": "◉",
-      "eyebrow": "Verde · rojo · azul",
+      "eyebrow": "Verde · rojo",
       "title": "Indicadores de chats",
       "summary": "Señales visuales para priorizar conversaciones según los datos disponibles.",
       "features": [
