@@ -1,0 +1,417 @@
+{
+  "site_version": "1.1.71",
+  "hero_tag": "GUÍA DE USO · V1.1.71",
+  "hero_title": "Todo Antares,",
+  "hero_accent": "explicado en un lugar.",
+  "hero_summary": "Aprende para qué sirve cada herramienta, cómo configurarla y qué comprobar antes de iniciar un proceso.",
+  "sections": [
+    {
+      "id": "inicio",
+      "symbol": "⌂",
+      "eyebrow": "Comienza aquí",
+      "title": "Primeros pasos",
+      "summary": "Aprende a abrir Antares, identificar los módulos y trabajar con seguridad.",
+      "features": [
+        {
+          "title": "Abrir y activar",
+          "body": "En TalkyTimes, abre el icono de Antares Helper. La extensión verifica el perfil y la licencia. Las funciones disponibles dependen del plan asociado.",
+          "tip": "Comprueba el estado de la licencia en Cuenta si un módulo aparece bloqueado.",
+          "image": ""
+        },
+        {
+          "title": "Navegación",
+          "body": "Usa las pestañas para cambiar de herramienta. Cada sección conserva sus controles y opciones.",
+          "tip": "Busca “Inicio” o “Detener” en el módulo que estés utilizando.",
+          "image": ""
+        },
+        {
+          "title": "Buenas prácticas",
+          "body": "Previsualiza el contenido y el destinatario, comprueba el historial y evita envíos repetidos o no solicitados.",
+          "tip": "No ejecutes dos lotes de la misma función al mismo tiempo.",
+          "image": ""
+        }
+      ]
+    },
+    {
+      "id": "seguridad",
+      "symbol": "🛡",
+      "eyebrow": "Bloqueo de texto",
+      "title": "Filtro global de seguridad",
+      "summary": "Detecta palabras personalizadas y ciertas solicitudes restringidas antes de enviar contenido.",
+      "features": [
+        {
+          "title": "Palabras y frases adicionales",
+          "body": "Escribe una palabra o frase por línea y pulsa “Guardar lista”. Los términos personalizados se comprueban junto con las reglas integradas.",
+          "tip": "Una palabra suelta añadida, como “meet”, se bloquea si coincide con las reglas personalizadas.",
+          "image": ""
+        },
+        {
+          "title": "Probar sin enviar",
+          "body": "Introduce un texto en “Probar texto sin enviarlo” y pulsa “Comprobar texto” para ver si se permitiría o bloquearía.",
+          "tip": "Prueba las nuevas reglas aquí antes de utilizarlas en un chat real.",
+          "image": ""
+        },
+        {
+          "title": "Alcance del filtro",
+          "body": "La extensión intenta comprobar chat, cartas, publicaciones y funciones automatizadas. Las solicitudes de contacto externo, dinero, regalos o encuentros forman parte de las reglas contextuales.",
+          "tip": "El filtro no garantiza detectar todas las variantes del lenguaje; comprueba su funcionamiento tras actualizar.",
+          "image": ""
+        }
+      ]
+    },
+    {
+      "id": "colores",
+      "symbol": "◉",
+      "eyebrow": "Verde · rojo · azul",
+      "title": "Indicadores de chats",
+      "summary": "Señales visuales para priorizar conversaciones según los datos disponibles.",
+      "features": [
+        {
+          "title": "💚 Chat que factura",
+          "body": "Marca en verde los chats que cumplen las condiciones operativas de mensajes y cartas establecidas en la extensión.",
+          "tip": "El indicador no es una confirmación de pagos o ingresos reales.",
+          "image": ""
+        },
+        {
+          "title": "🔴 Chat perdido",
+          "body": "Marca en rojo conversaciones que encajan con los criterios configurados de atención pendiente.",
+          "tip": "Consulta el chat antes de actuar: el color es una ayuda, no una garantía de que esté perdido.",
+          "image": ""
+        },
+        {
+          "title": "🔵 Otros indicadores",
+          "body": "Algunas conversaciones muestran un indicador azul cuando reúnen condiciones de cartas disponibles u otras señales de seguimiento.",
+          "tip": "Los colores dependen de contadores y datos de TalkyTimes; si están desactualizados, recarga y revisa el diagnóstico.",
+          "image": ""
+        }
+      ]
+    },
+    {
+      "id": "chat",
+      "symbol": "◌",
+      "eyebrow": "Mensajes y borradores",
+      "title": "Chat Sender",
+      "summary": "Prepara mensajes, revisa borradores con IA y controla el envío por destinatarios.",
+      "features": [
+        {
+          "title": "Modo de trabajo",
+          "body": "Selecciona “Borradores personalizados con IA (para revisar)” para obtener borradores por contacto. “Mensaje masivo (texto exacto)” utiliza literalmente el texto escrito.",
+          "tip": "El modo de texto exacto no genera variedad automáticamente.",
+          "image": ""
+        },
+        {
+          "title": "IDs destino",
+          "body": "Añade un ID por línea o utiliza “Cargar IDs del Scraper” para reutilizar una lista preparada.",
+          "tip": "Comprueba que los IDs correspondan a los destinatarios previstos.",
+          "image": ""
+        },
+        {
+          "title": "Borradores personalizados",
+          "body": "Abre el panel de borradores, prepara textos diferentes, revisa cada uno, selecciona los aprobados y comprueba la vista previa del lote.",
+          "tip": "Los borradores no aprobados no deben enviarse automáticamente.",
+          "image": ""
+        },
+        {
+          "title": "Inactividad de chats",
+          "body": "Activa “Enviar solo a chats sin interacción reciente” y selecciona un intervalo, como 1 hora. La comprobación considera los mensajes recientes de ambas personas.",
+          "tip": "Si el historial no puede comprobarse, el sistema debe evitar un envío no verificado.",
+          "image": ""
+        },
+        {
+          "title": "Evitar duplicados",
+          "body": "El módulo comprueba historial y registros locales para omitir textos repetidos al mismo contacto. Los envíos sin confirmar deben revisarse manualmente.",
+          "tip": "No reinicies un lote incierto sin comprobar primero los chats.",
+          "image": ""
+        },
+        {
+          "title": "Inicio, Detener y progreso",
+          "body": "El botón principal alterna entre Inicio y Detener según el proceso. El progreso indica mensajes procesados y confirmados; algunas vistas pueden restaurarlo tras recargar.",
+          "tip": "No interpretes “procesado” como “entregado” si falta confirmación.",
+          "image": ""
+        }
+      ]
+    },
+    {
+      "id": "mail",
+      "symbol": "✉",
+      "eyebrow": "Cartas y fotos",
+      "title": "Mail Sender · Cartas",
+      "summary": "Prepara cartas con herramientas de IA, destinatarios y opciones de adjuntos.",
+      "features": [
+        {
+          "title": "Carta e IA",
+          "body": "Redacta el contenido o utiliza el estudio de cartas para preparar texto. Revisa el resultado antes de enviarlo.",
+          "tip": "No compartas datos personales de terceros en prompts de IA.",
+          "image": ""
+        },
+        {
+          "title": "Fotos del álbum",
+          "body": "Configura una o dos fotos y, si está disponible, rotación inteligente de imágenes del álbum.",
+          "tip": "Comprueba que tienes derecho a compartir las fotos seleccionadas.",
+          "image": ""
+        },
+        {
+          "title": "Ritmo de envío",
+          "body": "Ajusta los intervalos disponibles y controla el estado del lote con el botón principal.",
+          "tip": "Los envíos deben respetar las políticas y límites aplicables de TalkyTimes.",
+          "image": ""
+        }
+      ]
+    },
+    {
+      "id": "posts",
+      "symbol": "ϟ",
+      "eyebrow": "Publicaciones",
+      "title": "Posts Sender",
+      "summary": "Permite preparar publicaciones exclusivas para destinatarios seleccionados.",
+      "features": [
+        {
+          "title": "Texto de la publicación",
+          "body": "Escribe la publicación o utiliza herramientas de redacción para mejorarla.",
+          "tip": "Revisa el texto, formato y destinatarios.",
+          "image": ""
+        },
+        {
+          "title": "Fotos",
+          "body": "El panel indica los adjuntos requeridos; en la versión revisada aparece la sección “Fotos del Álbum (4 obligatorias)”.",
+          "tip": "Comprueba los requisitos actuales de la plataforma antes de enviar.",
+          "image": ""
+        },
+        {
+          "title": "Pausas y destinatarios",
+          "body": "Añade destinatarios por línea, configura las pausas y utiliza Inicio/Detener.",
+          "tip": "No repitas publicaciones a contactos que ya las hayan recibido.",
+          "image": ""
+        }
+      ]
+    },
+    {
+      "id": "cycler",
+      "symbol": "∞",
+      "eyebrow": "Search y Outbox",
+      "title": "Auto Cycler",
+      "summary": "Organiza acciones Like y Follow para perfiles encontrados en Search o Outbox.",
+      "features": [
+        {
+          "title": "Search",
+          "body": "Recorre resultados de búsqueda según criterios configurados, como edad, país y estado online, para aplicar las acciones habilitadas.",
+          "tip": "Search no es un envío de mensajes.",
+          "image": ""
+        },
+        {
+          "title": "Outbox",
+          "body": "Recorre contactos del buzón de salida y revisa las acciones que correspondan, según la configuración.",
+          "tip": "No confundas Outbox con Chat Sender.",
+          "image": ""
+        },
+        {
+          "title": "Bucle infinito ON",
+          "body": "El ciclo repite las pasadas con pausas hasta pulsar Detener, sujeto a las restricciones del servicio.",
+          "tip": "No significa que TalkyTimes permita acciones ilimitadas.",
+          "image": ""
+        },
+        {
+          "title": "Bucle infinito OFF",
+          "body": "Ejecuta las pasadas hasta el límite configurado o hasta agotar los resultados de la tarea.",
+          "tip": "Si cambias ON/OFF, comprueba el estado antes de iniciar.",
+          "image": ""
+        },
+        {
+          "title": "Velocidad y retardos",
+          "body": "Configura los retrasos y pausas disponibles.",
+          "tip": "Evita configuraciones que puedan generar demasiadas solicitudes.",
+          "image": ""
+        }
+      ]
+    },
+    {
+      "id": "bot",
+      "symbol": "⚙",
+      "eyebrow": "Like · Wink · Follow",
+      "title": "Antares Bot",
+      "summary": "Automatiza acciones seleccionadas sobre listas de perfiles.",
+      "features": [
+        {
+          "title": "Acciones",
+          "body": "Selecciona Like, Wink o Follow y prepara la lista de IDs.",
+          "tip": "Las acciones ejecutadas dependen de los controles realmente habilitados.",
+          "image": ""
+        },
+        {
+          "title": "Filtros rápidos",
+          "body": "Usa los filtros para seleccionar perfiles según acciones faltantes o condiciones visibles.",
+          "tip": "Verifica que la lista sea correcta antes de comenzar.",
+          "image": ""
+        },
+        {
+          "title": "Pausas y visitas",
+          "body": "Configura la velocidad y los descansos. La vista también incluye opciones de visita previa.",
+          "tip": "Estas opciones no evitan automáticamente restricciones del servicio.",
+          "image": ""
+        }
+      ]
+    },
+    {
+      "id": "scraper",
+      "symbol": "≡",
+      "eyebrow": "Recolector de IDs",
+      "title": "Scraper",
+      "summary": "Organiza listas de perfiles accesibles desde tu sesión.",
+      "features": [
+        {
+          "title": "Recolección",
+          "body": "El módulo recoge IDs visibles según las categorías y filtros seleccionados.",
+          "tip": "No presupongas acceso a datos privados o no visibles.",
+          "image": ""
+        },
+        {
+          "title": "Copiado y transferencia",
+          "body": "Usa las opciones de copiado rápido o carga los IDs en Chat Sender y otros módulos compatibles.",
+          "tip": "Revisa la lista antes de enviarla a otro módulo.",
+          "image": ""
+        },
+        {
+          "title": "Modo periódico",
+          "body": "Si está disponible, puedes configurar la recolección periódica.",
+          "tip": "Desactiva la tarea si deja de ser necesaria.",
+          "image": ""
+        }
+      ]
+    },
+    {
+      "id": "avr",
+      "symbol": "⌨",
+      "eyebrow": "Respuestas rápidas",
+      "title": "AVR · Atajos",
+      "summary": "Prepara textos reutilizables y utiliza accesos directos del teclado.",
+      "features": [
+        {
+          "title": "Mensajes guardados",
+          "body": "Los paneles Mensaje 1 a 4 permiten configurar respuestas rápidas.",
+          "tip": "Comprueba el texto antes de insertarlo o enviarlo.",
+          "image": ""
+        },
+        {
+          "title": "Atajos",
+          "body": "La extensión incluye comandos como Ctrl+1, Ctrl+2 y Ctrl+3, sujetos a disponibilidad y conflictos del navegador.",
+          "tip": "Puedes consultar los atajos activos en chrome://extensions/shortcuts.",
+          "image": ""
+        }
+      ]
+    },
+    {
+      "id": "ia",
+      "symbol": "✦",
+      "eyebrow": "Perfil y redacción",
+      "title": "Asistente IA",
+      "summary": "Ayuda a generar y ajustar borradores según el contexto que proporciones.",
+      "features": [
+        {
+          "title": "Perfil del personaje",
+          "body": "Añade campos como nombre, edad, intereses, biografía y notas para adaptar las sugerencias.",
+          "tip": "Incluye solo información que tengas permiso para utilizar.",
+          "image": ""
+        },
+        {
+          "title": "Tono y estilo",
+          "body": "Configura mood, idioma y otras preferencias disponibles para personalizar borradores.",
+          "tip": "Verifica siempre hechos y contenido antes de enviarlo.",
+          "image": ""
+        },
+        {
+          "title": "Proveedores externos",
+          "body": "Algunas funciones pueden depender de proveedores de IA y de la autorización de la licencia.",
+          "tip": "La disponibilidad puede variar por plan, configuración o servicio.",
+          "image": ""
+        }
+      ]
+    },
+    {
+      "id": "blacklist",
+      "symbol": "⊘",
+      "eyebrow": "Exclusión de contactos",
+      "title": "Blacklist",
+      "summary": "Gestiona contactos que no deseas incluir en ciertas acciones.",
+      "features": [
+        {
+          "title": "Añadir y consultar",
+          "body": "Mantén una lista de IDs que deban excluirse de los procesos compatibles.",
+          "tip": "Comprueba el efecto sobre cada herramienta; no todos los módulos usan necesariamente los mismos filtros.",
+          "image": ""
+        },
+        {
+          "title": "Evitar contactos incorrectos",
+          "body": "Revisa los IDs y elimina errores de la lista antes de iniciar lotes.",
+          "tip": "No introduzcas datos personales innecesarios.",
+          "image": ""
+        }
+      ]
+    },
+    {
+      "id": "cuenta",
+      "symbol": "♙",
+      "eyebrow": "Suscripción y diagnóstico",
+      "title": "Cuenta y licencia",
+      "summary": "Consulta el plan, la identificación del perfil y las herramientas de soporte.",
+      "features": [
+        {
+          "title": "Licencia",
+          "body": "Antares asocia funciones disponibles al perfil autorizado de TalkyTimes.",
+          "tip": "Si cambias de perfil, comprueba el estado de activación.",
+          "image": ""
+        },
+        {
+          "title": "Diagnóstico",
+          "body": "Permite generar informes técnicos para investigar problemas de contadores, colores o comunicaciones.",
+          "tip": "Antes de compartir un informe, revisa si contiene datos sensibles.",
+          "image": ""
+        },
+        {
+          "title": "Alertas y sonidos",
+          "body": "Puedes ajustar alertas y volumen para determinados eventos.",
+          "tip": "Configura solo los avisos que necesites.",
+          "image": ""
+        }
+      ]
+    },
+    {
+      "id": "errores",
+      "symbol": "?",
+      "eyebrow": "Solución de problemas",
+      "title": "Problemas frecuentes",
+      "summary": "Primeras comprobaciones antes de reportar un error.",
+      "features": [
+        {
+          "title": "Sender no responde / no_receiver",
+          "body": "Comprueba que TalkyTimes está abierto en una pestaña compatible, que la extensión está actualizada y que has recargado la página. Si el envío quedó sin confirmar, consulta el chat antes de reintentar.",
+          "tip": "No fuerces reintentos de resultados desconocidos: pueden duplicar mensajes.",
+          "image": ""
+        },
+        {
+          "title": "Los colores no cambian",
+          "body": "Comprueba que los contadores estén actualizados y que el chat cumpla todavía las condiciones. Prueba a recargar TalkyTimes y exportar el diagnóstico.",
+          "tip": "No uses un color como confirmación de ingresos reales.",
+          "image": ""
+        },
+        {
+          "title": "La IA no responde",
+          "body": "Comprueba el estado de licencia y conectividad, y si la función está disponible en tu plan.",
+          "tip": "La IA puede utilizar servicios externos con disponibilidad variable.",
+          "image": ""
+        },
+        {
+          "title": "Una frase prohibida se envía",
+          "body": "Guarda la lista de palabras, prueba el texto en el panel del filtro, recarga TalkyTimes y comprueba si el bloqueo funciona en la pantalla de origen.",
+          "tip": "Si persiste, detén ese tipo de envíos hasta resolver el fallo.",
+          "image": ""
+        },
+        {
+          "title": "Borradores repetidos",
+          "body": "Selecciona el modo de IA con revisión, comprueba el historial antes de aprobar y evita relanzar lotes dudosos.",
+          "tip": "No confundas “texto exacto” con generación de variantes.",
+          "image": ""
+        }
+      ]
+    }
+  ]
+}
