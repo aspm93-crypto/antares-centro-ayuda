@@ -55,6 +55,12 @@
           "title": "Alcance del filtro",
           "body": "La extensión intenta comprobar chat, cartas, publicaciones y funciones automatizadas. Las solicitudes de contacto externo, dinero, regalos o encuentros forman parte de las reglas contextuales.",
           "tip": "El filtro no garantiza detectar todas las variantes del lenguaje; comprueba su funcionamiento tras actualizar.",
+          "image": ""
+        },
+        {
+          "title": "Ejemplo",
+          "body": "\"Meet\" palabra por seguridad bloqueada al referirse a un encuentro",
+          "tip": "",
           "image": "/media/Interfaz de chat con alerta de privacidad.png"
         }
       ]
@@ -79,7 +85,7 @@
           "image": ""
         },
         {
-          "title": "Visibilidad",
+          "title": "Ejemplo",
           "body": "Chat verde ha facturado\n\nChats rojos estan perdidos \"3 minutos sin responder\"",
           "tip": "",
           "image": "/media/Lista de chats con estados destacados.png"
