@@ -134,6 +134,12 @@
           "body": "El botón principal alterna entre Inicio y Detener según el proceso. El progreso indica mensajes procesados y confirmados; algunas vistas pueden restaurarlo tras recargar.",
           "tip": "No interpretes “procesado” como “entregado” si falta confirmación.",
           "image": ""
+        },
+        {
+          "title": "Ejemplo",
+          "body": "Sender bot enviando mensajes personalizados por cliente, los mensajes no se repiten y hay 200 temas distintos que genera la IA",
+          "tip": "",
+          "image": "/media/Interfaz de mensajería Talkytimes anonimizada.png"
         }
       ]
     },
