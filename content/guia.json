@@ -299,6 +299,12 @@
           "body": "Si está disponible, puedes configurar la recolección periódica.",
           "tip": "Desactiva la tarea si deja de ser necesaria.",
           "image": ""
+        },
+        {
+          "title": "Ejemplo",
+          "body": "Recopita todos los ID's en la lista de chat en orden de tiempo, esos ID's luego se pueden copiar en las opciones de \"Bot\" \"Chat sender\" \"Mail Sender\" \"Post Sender\" para enviar mensajes masivos personalizados con IA o interacciones",
+          "tip": "",
+          "image": "/media/Panel comparativo del recolector de IDs.png"
         }
       ]
     },
