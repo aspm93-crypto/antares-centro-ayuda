@@ -353,6 +353,12 @@
           "body": "Algunas funciones pueden depender de proveedores de IA y de la autorización de la licencia.",
           "tip": "La disponibilidad puede variar por plan, configuración o servicio.",
           "image": ""
+        },
+        {
+          "title": "Ejemplo",
+          "body": "Recopila automaticamente toda la informacion publica del perfil en el que esta subscrita la extension y las usa para generar las respuestas de IA con mas detalle",
+          "tip": "",
+          "image": "/media/Panel de perfil con datos ocultos.png"
         }
       ]
     },
