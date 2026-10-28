@@ -77,6 +77,12 @@
           "body": "Marca en rojo conversaciones que encajan con los criterios configurados de atención pendiente.",
           "tip": "Consulta el chat antes de actuar: el color es una ayuda, no una garantía de que esté perdido.",
           "image": ""
+        },
+        {
+          "title": "Visibilidad",
+          "body": "Chat verde ha facturado\n\nChats rojos estan perdidos \"3 minutos sin responder\"",
+          "tip": "",
+          "image": "/media/Lista de chats con estados destacados.png"
         }
       ]
     },
