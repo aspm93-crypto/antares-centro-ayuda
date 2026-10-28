@@ -55,7 +55,7 @@
           "title": "Alcance del filtro",
           "body": "La extensión intenta comprobar chat, cartas, publicaciones y funciones automatizadas. Las solicitudes de contacto externo, dinero, regalos o encuentros forman parte de las reglas contextuales.",
           "tip": "El filtro no garantiza detectar todas las variantes del lenguaje; comprueba su funcionamiento tras actualizar.",
-          "image": ""
+          "image": "/media/Interfaz de chat con alerta de privacidad.png"
         }
       ]
     },
@@ -122,12 +122,6 @@
           "body": "El botón principal alterna entre Inicio y Detener según el proceso. El progreso indica mensajes procesados y confirmados; algunas vistas pueden restaurarlo tras recargar.",
           "tip": "No interpretes “procesado” como “entregado” si falta confirmación.",
           "image": ""
-        },
-        {
-          "title": "aqui",
-          "body": "asi funciona",
-          "tip": "",
-          "image": "/media/Sin título.png"
         }
       ]
     },
