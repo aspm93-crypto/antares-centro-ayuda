@@ -236,7 +236,7 @@
         },
         {
           "title": "Ejemplo",
-          "body": "Da like/Follow a todos los perfiles que aparecen en \"Search\" mientras se trabaje el perfil (en segundo plano) si bucle infinito esta activo le dara L/F a todos desde la pagina 1 hasta la 100, una vez termine volver a iniciar el bucle desde la pagina 1\n\nSi bucle infinito esta desactivado el limite es programable\n\nNO RELENTIZA EL PERFIL NI LO PONE PESADO",
+          "body": "Da like/Follow a todos los perfiles que aparecen en \"Search\" o en \"Mails - Outbox\" mientras se trabaje el perfil (en segundo plano), en el caso de la pestaña \"Search\" si bucle infinito esta activo le dara L/F a todos desde la pagina 1 hasta la 100, una vez termine volver a iniciar el bucle desde la pagina 1\n\nSi bucle infinito esta desactivado el limite es programable\n\nNO RELENTIZA EL PERFIL NI LO PONE PESADO",
           "tip": "",
           "image": "/media/Comparativa del panel Auto Cycler.png"
         }
@@ -266,6 +266,12 @@
           "body": "Configura la velocidad y los descansos. La vista también incluye opciones de visita previa.",
           "tip": "Estas opciones no evitan automáticamente restricciones del servicio.",
           "image": ""
+        },
+        {
+          "title": "Ejemplo",
+          "body": "Da Likes/Follow/Wink a todos los ID's que se recopilen de la lista de chat con la opcion \"Scrapper\" una vez pegados todos los ID's del scrapper se le da iniciar y empezara el proceso.",
+          "tip": "",
+          "image": "/media/Panel de automatización con controles neon.png"
         }
       ]
     },
