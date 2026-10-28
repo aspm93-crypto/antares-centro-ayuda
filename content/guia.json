@@ -233,6 +233,12 @@
           "body": "Configura los retrasos y pausas disponibles.",
           "tip": "Evita configuraciones que puedan generar demasiadas solicitudes.",
           "image": ""
+        },
+        {
+          "title": "Ejemplo",
+          "body": "Da like/Follow a todos los perfiles que aparecen en \"Search\" mientras se trabaje el perfil (en segundo plano) si bucle infinito esta activo le dara L/F a todos desde la pagina 1 hasta la 100, una vez termine volver a iniciar el bucle desde la pagina 1\n\nSi bucle infinito esta desactivado el limite es programable\n\nNO RELENTIZA EL PERFIL NI LO PONE PESADO",
+          "tip": "",
+          "image": "/media/Comparativa del panel Auto Cycler.png"
         }
       ]
     },
