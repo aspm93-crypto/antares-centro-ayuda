@@ -359,6 +359,12 @@
           "body": "Recopila automaticamente toda la informacion publica del perfil en el que esta subscrita la extension y las usa para generar las respuestas de IA con mas detalle",
           "tip": "",
           "image": "/media/Panel de perfil con datos ocultos.png"
+        },
+        {
+          "title": "Generar y revisar una respuesta en el chat",
+          "body": "Abre la conversación que quieres responder. Pulsa el botón de Antares para generar una respuesta y lee el borrador en el cuadro de escritura. Puedes editar el texto antes de pulsar Enviar.",
+          "tip": "La imagen es una maqueta con datos ficticios. La ubicación de los controles puede variar según la versión.",
+          "image": "/media/ejemplo-generar-respuesta.png"
         }
       ]
     },
