@@ -1,9 +1,9 @@
 {
-  "site_version": "1.1.71",
-  "hero_tag": "GUÍA DE USO · V1.1.71",
+  "site_version": "1.1.235",
+  "hero_tag": "GUÍA DE USO · V1.1.235",
   "hero_title": "Todo Antares,",
   "hero_accent": "explicado en un lugar.",
-  "hero_summary": "Aprende para qué sirve cada herramienta, cómo configurarla y qué comprobar antes de iniciar un proceso.",
+  "hero_summary": "Encuentra los pasos para trabajar en TalkyTimes con Antares Helper. Busca por tarea, botón o problema, por ejemplo «escuchar un favorito», «traducir una carta» o «exportar chat».",
   "sections": [
     {
       "id": "inicio",
@@ -14,8 +14,8 @@
       "features": [
         {
           "title": "Abrir y activar",
-          "body": "En TalkyTimes, abre el icono de Antares Helper. La extensión verifica el perfil y la licencia. Las funciones disponibles dependen del plan asociado.",
-          "tip": "Comprueba el estado de la licencia en Cuenta si un módulo aparece bloqueado.",
+          "body": "Abre tu perfil en TalkyTimes y pulsa el icono de Antares Helper. En **Activación de licencia**, usa **Autodetectar**, compara el ID con el de tu propio perfil y pulsa **Verificar acceso por ID**. Abre **Cuenta** para comprobar el plan y la vigencia.",
+          "tip": "Si el ID activo difiere del autorizado, Antares deshabilita el envío y la automatización. Vuelve al perfil vinculado antes de iniciar un lote.",
           "image": ""
         },
         {
@@ -28,6 +28,12 @@
           "title": "Buenas prácticas",
           "body": "Previsualiza el contenido y el destinatario, comprueba el historial y evita envíos repetidos o no solicitados.",
           "tip": "No ejecutes dos lotes de la misma función al mismo tiempo.",
+          "image": ""
+        },
+        {
+          "title": "Elegir el tema y abrir la ayuda",
+          "body": "Usa el icono de luna para cambiar el aspecto y el engranaje para abrir **Configurar modo oscuro**. Puedes seleccionar **Oscuro**, **Claro** o **Restablecer**. El botón **¿Cómo funciona?** abre la guía.",
+          "tip": "",
           "image": ""
         }
       ]
@@ -62,6 +68,12 @@
           "body": "\"Meet\" palabra por seguridad bloqueada al referirse a un encuentro",
           "tip": "",
           "image": "/media/Interfaz de chat con alerta de privacidad.png"
+        },
+        {
+          "title": "Interpretar el color del aviso",
+          "body": "Un bloqueo rojo impide continuar con el envío. Una advertencia naranja permite revisar el contexto y continuar. Para comprobar una expresión propia, guárdala en la lista y usa **Probar texto sin enviarlo**.",
+          "tip": "Las reglas básicas siguen activas cuando cambias las palabras adicionales.",
+          "image": ""
         }
       ]
     },
@@ -74,14 +86,14 @@
       "features": [
         {
           "title": "💚 Chat que factura",
-          "body": "Marca en verde los chats que cumplen las condiciones operativas de mensajes y cartas establecidas en la extensión.",
-          "tip": "El indicador no es una confirmación de pagos o ingresos reales.",
+          "body": "En esta versión, el verde se confirma al leer juntos los contadores de **10 mensajes y 2 cartas**. Por ejemplo, 10/1 todavía no cumple la condición. Tras enviar una carta, espera la actualización de los contadores del contacto.",
+          "tip": "Estos son los contadores que reconoce Antares en TalkyTimes. Para verificar ingresos, consulta tu registro de facturación.",
           "image": ""
         },
         {
           "title": "🔴 Chat perdido",
-          "body": "Marca en rojo conversaciones que encajan con los criterios configurados de atención pendiente.",
-          "tip": "Consulta el chat antes de actuar: el color es una ayuda, no una garantía de que esté perdido.",
+          "body": "Aparece cuando el último mensaje verificable lo escribió el cliente, han pasado al menos **3 minutos** y hay **1 mensaje o 1 carta** como mínimo en los contadores. Si también cumple el verde, la alerta roja tiene prioridad mientras siga pendiente.",
+          "tip": "Ejemplo: si el cliente escribió a las 10:00 y sigue sin respuesta a las 10:03, con un contador positivo puede aparecer la marca roja.",
           "image": ""
         },
         {
@@ -89,6 +101,132 @@
           "body": "Chat verde ha facturado\n\nChats rojos estan perdidos \"3 minutos sin responder\"",
           "tip": "",
           "image": "/media/Lista de chats con estados destacados.png"
+        },
+        {
+          "title": "Contador de atención y distintivos",
+          "body": "En las filas compatibles puedes ver una cuenta regresiva de **2:50** al detectarse el aviso de mensaje. Es una ayuda visual de atención. La regla del rojo evalúa por separado la antigüedad real del último mensaje entrante. Los indicadores de Like y Follow ayudan a reconocer interacciones ya realizadas.",
+          "tip": "",
+          "image": ""
+        }
+      ]
+    },
+    {
+      "id": "audios",
+      "title": "Audios favoritos",
+      "symbol": "★",
+      "eyebrow": "EN TALKYTIMES",
+      "summary": "Guarda audios por perfil, escucha una muestra y elige el archivo correcto en el chat.",
+      "features": [
+        {
+          "title": "Guardar o quitar un audio favorito",
+          "body": "En **Manage Media**, abre la galería de audios y localiza la tarjeta por su nombre. Pulsa **☆** en esa tarjeta. La estrella marcada indica que el audio quedó entre los favoritos del perfil activo. Para quitarlo, vuelve a pulsar la estrella y confirma el nombre.",
+          "tip": "El aviso distingue entre «Audio guardado en este navegador» y «Favorito guardado sin copia de audio». En el segundo caso se ha guardado el nombre.",
+          "image": "/media/guia-audios.svg"
+        },
+        {
+          "title": "Buscar un favorito en la galería",
+          "body": "Abre **★ Audios favoritos** y escribe parte del nombre en **Buscar en mis favoritos…**. Pulsa **Ir ↗** para localizar la tarjeta original. Usa **Detener** si quieres cancelar la búsqueda.",
+          "tip": "La galería muestra hasta 70 coincidencias a la vez. Escribe más letras si falta la que buscas.",
+          "image": ""
+        },
+        {
+          "title": "Escuchar un favorito y actualizar la copia",
+          "body": "Pulsa **▶ Escuchar** junto al nombre. Si aparece un reproductor en pausa, pulsa su botón de reproducción. Si la copia falta o el enlace caducó, reproduce el archivo en la galería original y pulsa **↻** para actualizar la copia. Vuelve a probar **▶ Escuchar**.",
+          "tip": "Escuchar la muestra te permite comprobar qué audio es antes de seleccionarlo para un cliente.",
+          "image": ""
+        },
+        {
+          "title": "Seleccionar el audio en un chat y enviarlo",
+          "body": "Abre la conversación y el selector de audios de TalkyTimes. Junto a **Audio**, abre **★ Audios favoritos** y busca por nombre. Pulsa **Seleccionar** si la tarjeta ya está cargada o **Localizar y seleccionar** si Antares tiene que buscarla. Comprueba la selección en el panel de TalkyTimes y pulsa su botón de envío cuando corresponda.",
+          "tip": "El selector muestra hasta 55 coincidencias. Un favorito guardado puede no estar disponible en esa conversación. Puedes detener la búsqueda o cerrar el panel con Esc.",
+          "image": ""
+        },
+        {
+          "title": "No veo la estrella o mi lista aparece vacía",
+          "body": "Comprueba que estás en el perfil correcto y que Antares ha verificado su acceso. Abre la galería de audios en Manage Media para marcar el primero. En el chat, abre el selector de Audio para ver el acceso a favoritos. Borra el texto de búsqueda para ver la lista completa del perfil.",
+          "tip": "Las etiquetas Listened y Unlistened señalan el estado de escucha de TalkyTimes. La estrella indica que tú guardaste el audio.",
+          "image": ""
+        }
+      ]
+    },
+    {
+      "id": "traduccion",
+      "title": "Traducción y exportación",
+      "symbol": "⇄",
+      "eyebrow": "EN TALKYTIMES",
+      "summary": "Traduce un borrador, lee mensajes y cartas en tu idioma o descarga una conversación.",
+      "features": [
+        {
+          "title": "Traducir el borrador que estás escribiendo",
+          "body": "Escribe el texto en el cuadro del chat y pulsa el botón de traducción junto al editor. Con texto en el cuadro también puedes usar **Tab** o **Alt+T**. Revisa el resultado antes de enviarlo. Para cambiar el comando de Chrome, pasa el cursor sobre el botón y abre **Atajos**.",
+          "tip": "",
+          "image": ""
+        },
+        {
+          "title": "Traducir un mensaje o una carta recibida",
+          "body": "Junto al contenido, pulsa **Traducir este mensaje**. Espera a que termine y usa **Ver original** para volver al texto recibido. En las vistas compatibles también encontrarás un control de traducción en el encabezado del chat o de las cartas.",
+          "tip": "Si aparece «No se pudo traducir», vuelve a pulsar el control. Si ocurre en varios mensajes, comprueba el acceso de la licencia y la conexión.",
+          "image": ""
+        },
+        {
+          "title": "Exportar chat en original, español o inglés",
+          "body": "Abre el chat que necesitas conservar y pulsa **Exportar conversación** en el encabezado. Elige original, español o inglés. Sigue el progreso o pulsa **Cancelar**. Al finalizar se descarga un archivo **.txt** con el nombre del contacto, el identificador del chat, la fecha y el idioma.",
+          "tip": "La exportación guarda un punto de continuación para recuperarse tras una recarga. Si el historial supera el límite de recuperación, Antares avisa en lugar de entregar un archivo incompleto.",
+          "image": ""
+        }
+      ]
+    },
+    {
+      "id": "bandejas",
+      "title": "Bandejas y recarga",
+      "symbol": "↻",
+      "eyebrow": "EN TALKYTIMES",
+      "summary": "Consulta cartas leídas, filtra contactos online y controla cuándo se actualiza TalkyTimes.",
+      "features": [
+        {
+          "title": "Read · localizar cartas leídas",
+          "body": "En la bandeja de cartas, activa **Read** para recorrer las páginas y reunir las cartas marcadas como leídas. Pulsa una carta para abrir la conversación. Usa **Volver a la paginación** para regresar a la vista normal.",
+          "tip": "**Borrar** localiza la carta original y requiere confirmación. Si Antares carece de un identificador único, bloquea el borrado.",
+          "image": ""
+        },
+        {
+          "title": "Online Only en Has Limits",
+          "body": "En la vista **Has Limits** de cartas, activa **Online Only** para mostrar las filas detectadas como online. Consulta el contador de coincidencias. Desactiva el filtro si necesitas ver también el resto. La preferencia se guarda en el navegador.",
+          "tip": "",
+          "image": ""
+        },
+        {
+          "title": "Ajustar, pausar y reanudar la recarga",
+          "body": "En el control de recarga automática, introduce el intervalo en minutos y pulsa **Aplicar nuevo intervalo**. Usa el control de pausa para detener o reanudar la cuenta. La versión 1.1.235 acepta valores desde **1 minuto**.",
+          "tip": "El estado explica los aplazamientos. Antares espera durante la búsqueda de audios, el escaneo Read, la edición de un borrador o la reproducción de audio o vídeo.",
+          "image": ""
+        }
+      ]
+    },
+    {
+      "id": "reportes",
+      "title": "Reportes y VIP",
+      "symbol": "♙",
+      "eyebrow": "EN TALKYTIMES",
+      "summary": "Accede a las notas de clientes y a la lista VIP desde el chat.",
+      "features": [
+        {
+          "title": "Reporte TalkyTimes · clientes y notas",
+          "body": "Desde los controles del chat, abre **Reporte TalkyTimes (Clientes y notas)**. Comprueba el cliente y su ID antes de guardar una anotación. En **Reportes** puedes consultar los registros y agregar notas al cliente correspondiente.",
+          "tip": "",
+          "image": ""
+        },
+        {
+          "title": "Abrir la lista VIP y probar sus avisos",
+          "body": "Usa la **corona** en el chat para consultar la lista visible de VIP / Spenders. También puedes usar **Alt+V** o asignar el comando de la lista en los atajos de Chrome. En **Cuenta → Sonido**, elige el sonido VIP, ajusta su volumen y pulsa **Probar Sonido VIP**.",
+          "tip": "",
+          "image": ""
+        },
+        {
+          "title": "Clasificar un cliente y descargar el reporte",
+          "body": "El panel ofrece **Cliente fija**, **Audio y carta** y **Cliente potencial**. Completa el nombre y la nota, revisa los campos adicionales de cliente potencial si corresponden y pulsa **Guardar**. En **Reportes** consulta las notas y los totales de clientes. **Generar TXT** descarga el reporte.",
+          "tip": "",
+          "image": ""
         }
       ]
     },
@@ -113,14 +251,14 @@
         },
         {
           "title": "Borradores personalizados",
-          "body": "Abre el panel de borradores, prepara textos diferentes, revisa cada uno, selecciona los aprobados y comprueba la vista previa del lote.",
-          "tip": "Los borradores no aprobados no deben enviarse automáticamente.",
+          "body": "Elige **Borradores personalizados con IA (para revisar)**. Puedes añadir una nota real sobre tu día. Pulsa **Actualizar borradores**, selecciona hasta 100 pendientes, regenera los seleccionados si quieres cambiar los temas y abre **Vista previa del lote**. Revisa los textos y destinatarios antes de aprobar.",
+          "tip": "Cuando falta historial o el último mensaje es tuyo, el módulo puede preparar un borrador cotidiano entre 200 temas y omitir nombres que parecen alias.",
           "image": ""
         },
         {
           "title": "Inactividad de chats",
-          "body": "Activa “Enviar solo a chats sin interacción reciente” y selecciona un intervalo, como 1 hora. La comprobación considera los mensajes recientes de ambas personas.",
-          "tip": "Si el historial no puede comprobarse, el sistema debe evitar un envío no verificado.",
+          "body": "Activa **Enviar solo a chats sin interacción reciente** y elige **1, 2, 3, 6, 12 o 24 horas**. Antares comprueba los mensajes de ambos participantes justo antes de enviar, también en borradores aprobados. Si falta una fecha fiable, omite ese contacto.",
+          "tip": "Con 1 hora seleccionada, un mensaje tuyo hace 20 minutos también impide ese envío.",
           "image": ""
         },
         {
@@ -140,6 +278,18 @@
           "body": "Sender bot enviando mensajes personalizados por cliente, los mensajes no se repiten y hay 200 temas distintos que genera la IA",
           "tip": "",
           "image": "/media/Interfaz de mensajería Talkytimes anonimizada.png"
+        },
+        {
+          "title": "Preparar texto, plantilla y fotos",
+          "body": "Escribe hasta **300 caracteres**. Puedes cargar o guardar una plantilla, traducir al inglés, variar el texto con IA o usar **Sugerir Abridor PRO**. Consulta las variaciones con **Ver** y retíralas con **Quitar**. En las opciones de fotos, recolecta hasta 30 Basic, modifica la selección y elige una foto al azar por ID o **Solo Texto**.",
+          "tip": "",
+          "image": ""
+        },
+        {
+          "title": "Elegir el ritmo de mensajes",
+          "body": "En **Opciones de Fotos y Ritmo de Envío** puedes elegir Sigiloso (15–30 s), Normal (8–15 s) o Turbo (4–8 s). El panel muestra el progreso. Usa **Detener envío** para parar el lote y **Limpiar campos** cuando ya no necesites la configuración.",
+          "tip": "",
+          "image": ""
         }
       ]
     },
@@ -152,20 +302,20 @@
       "features": [
         {
           "title": "Carta e IA",
-          "body": "Redacta el contenido o utiliza el estudio de cartas para preparar texto. Revisa el resultado antes de enviarlo.",
-          "tip": "No compartas datos personales de terceros en prompts de IA.",
+          "body": "En **Estudio de Cartas IA**, elige EN o ES, el perfil y una temática: Primer Contacto, Intriga & Dilema, Seductora o Reenganche. Usa **Inspirar**, **Generar Carta** o **Pulir & Traducir**. El contador indica cuántos caracteres faltan para el mínimo de **150**. También puedes copiar o borrar el texto.",
+          "tip": "",
           "image": ""
         },
         {
           "title": "Fotos del álbum",
-          "body": "Configura una o dos fotos y, si está disponible, rotación inteligente de imágenes del álbum.",
-          "tip": "Comprueba que tienes derecho a compartir las fotos seleccionadas.",
+          "body": "Pulsa **Recolectar fotos** para cargar hasta 30 fotos Basic. Usa **Modificar**, **Marcar todas** o **Desmarcar** y confirma la selección. La rotación inteligente permite elegir **1 o 2 fotos por carta**.",
+          "tip": "",
           "image": ""
         },
         {
           "title": "Ritmo de envío",
-          "body": "Ajusta los intervalos disponibles y controla el estado del lote con el botón principal.",
-          "tip": "Los envíos deben respetar las políticas y límites aplicables de TalkyTimes.",
+          "body": "Introduce un ID por línea o carga los del Scraper. Elige Seguro (15–25 s con descansos), Normal (10–16 s) o Ágil (6–10 s). Revisa la carta y los adjuntos, inicia el envío secuencial y consulta el progreso. Usa **Detener envío** para interrumpirlo.",
+          "tip": "",
           "image": ""
         }
       ]
@@ -179,20 +329,32 @@
       "features": [
         {
           "title": "Texto de la publicación",
-          "body": "Escribe la publicación o utiliza herramientas de redacción para mejorarla.",
-          "tip": "Revisa el texto, formato y destinatarios.",
+          "body": "Redacta entre **100 y 3500 caracteres** o pulsa **Sugerir Post** para preparar el texto. Puedes traducirlo al inglés desde las herramientas de redacción. Comprueba el contador antes de continuar.",
+          "tip": "",
           "image": ""
         },
         {
           "title": "Fotos",
-          "body": "El panel indica los adjuntos requeridos; en la versión revisada aparece la sección “Fotos del Álbum (4 obligatorias)”.",
-          "tip": "Comprueba los requisitos actuales de la plataforma antes de enviar.",
+          "body": "Pulsa **Recargar Fotos** y selecciona exactamente **4 fotos Basic**. Comprueba que el contador indica **4/4** antes de iniciar. Si falta una imagen, revisa que pertenezca a la categoría Basic.",
+          "tip": "",
           "image": ""
         },
         {
           "title": "Pausas y destinatarios",
-          "body": "Añade destinatarios por línea, configura las pausas y utiliza Inicio/Detener.",
-          "tip": "No repitas publicaciones a contactos que ya las hayan recibido.",
+          "body": "Introduce los IDs de clientes uno por línea. También puedes usar **Cargar Con Post del Scraper**, **Cargar Todos** o **Vaciar**. Elige Rápido (15 s), Normal (22 s) o Cauteloso (30–45 s). Con el lote en marcha puedes **Pausar** o **Detener**.",
+          "tip": "El rayo del Scraper identifica un candidato. Si TalkyTimes no abre el formulario de Post, revisa el último fallo y el ID en el progreso.",
+          "image": ""
+        },
+        {
+          "title": "Modo silencioso (beta)",
+          "body": "Actívalo para reutilizar una pestaña inactiva durante el lote. Si TalkyTimes exige el foco, el proceso se detiene. Revisa el resultado del último intento antes de desmarcar la opción y continuar en modo visible.",
+          "tip": "",
+          "image": ""
+        },
+        {
+          "title": "Comprobar el último contacto antes de publicar",
+          "body": "Si trabajas con la regla de dejar más de una hora desde la última interacción y omitir chats donde escribió el operador al final, revisa ambos datos en la conversación antes de incluir el ID. En 1.1.235 el filtro configurable de inactividad figura en Chat Sender.",
+          "tip": "La opción Con Post del Scraper indica disponibilidad de publicación. Por sí sola no verifica ni el tiempo transcurrido ni quién escribió al final.",
           "image": ""
         }
       ]
@@ -206,8 +368,8 @@
       "features": [
         {
           "title": "Search",
-          "body": "Recorre resultados de búsqueda según criterios configurados, como edad, país y estado online, para aplicar las acciones habilitadas.",
-          "tip": "Search no es un envío de mensajes.",
+          "body": "Selecciona **Search**, indica edad mínima y máxima, país opcional y si quieres **Solo Online**, marcado inicialmente en el formulario. Escoge Like + Follow, Solo Like o Solo Follow. Consulta los contadores de progreso y acciones de Search por separado de los de Outbox.",
+          "tip": "",
           "image": ""
         },
         {
@@ -230,13 +392,13 @@
         },
         {
           "title": "Velocidad y retardos",
-          "body": "Configura los retrasos y pausas disponibles.",
-          "tip": "Evita configuraciones que puedan generar demasiadas solicitudes.",
+          "body": "Elige Rápido (2–4 s), Humano (3–7 s) o Cauteloso (7–14 s). El panel ofrece retardo mínimo, máximo y **Pausa cada**. Revisa si **Bucle infinito** está activo antes de iniciar. Usa **Detener** para terminar las pasadas.",
+          "tip": "",
           "image": ""
         },
         {
           "title": "Ejemplo",
-          "body": "Da like/Follow a todos los perfiles que aparecen en \"Search\" o en \"Mails - Outbox\" mientras se trabaje el perfil (en segundo plano), en el caso de la pestaña \"Search\" si bucle infinito esta activo le dara L/F a todos desde la pagina 1 hasta la 100, una vez termine volver a iniciar el bucle desde la pagina 1\n\nSi bucle infinito esta desactivado el limite es programable\n\nNO RELENTIZA EL PERFIL NI LO PONE PESADO",
+          "body": "Para trabajar solo contactos conectados de un rango de edad, elige Search, ajusta las edades y conserva Solo Online. Para revisar el buzón de salida cambia a Outbox. Observa el contador correspondiente al origen que elegiste.",
           "tip": "",
           "image": "/media/Comparativa del panel Auto Cycler.png"
         }
@@ -257,14 +419,14 @@
         },
         {
           "title": "Filtros rápidos",
-          "body": "Usa los filtros para seleccionar perfiles según acciones faltantes o condiciones visibles.",
-          "tip": "Verifica que la lista sea correcta antes de comenzar.",
+          "body": "Puedes **Usar Sin L+F** o **Usar Sin Wink** para cargar solo esa categoría. **Copiar** lleva la lista al portapapeles. **Cargar Todos del Scraper** recupera todos los IDs recolectados. Revisa las acciones Like, Wink y Follow seleccionadas antes de iniciar.",
+          "tip": "",
           "image": ""
         },
         {
           "title": "Pausas y visitas",
-          "body": "Configura la velocidad y los descansos. La vista también incluye opciones de visita previa.",
-          "tip": "Estas opciones no evitan automáticamente restricciones del servicio.",
+          "body": "Elige entre Humano Natural (5–9 s), Cauteloso (8–14 s), Rápido Moderado (3–6 s) o **Personalizado**. Configura descansos y visita previa si los necesitas. Consulta los contadores de likes, winks, follows y procesados, así como el registro de acciones. Usa **Pausar** para interrumpir el recorrido.",
+          "tip": "",
           "image": ""
         },
         {
@@ -284,20 +446,20 @@
       "features": [
         {
           "title": "Recolección",
-          "body": "El módulo recoge IDs visibles según las categorías y filtros seleccionados.",
-          "tip": "No presupongas acceso a datos privados o no visibles.",
+          "body": "Desde **Scraper**, pulsa **Iniciar recolección** para recorrer la lista de chats. Puedes detener el recorrido. El panel cuenta IDs, mensajes, cartas, ambos, contactos sin Like/Follow, sin Wink y con Post.",
+          "tip": "",
           "image": ""
         },
         {
           "title": "Copiado y transferencia",
-          "body": "Usa las opciones de copiado rápido o carga los IDs en Chat Sender y otros módulos compatibles.",
-          "tip": "Revisa la lista antes de enviarla a otro módulo.",
+          "body": "Elige entre Todos, Con Post, Sin Post, Sin L+F, Sin Wink, Con Cartas, Con Mensajes, Ambos, Con L+F o Con Wink. **Copiar filtrados** copia la categoría activa. También hay botones directos para cartas, con/sin post, con/sin L+F y con/sin wink. En el módulo de destino usa **Cargar IDs del Scraper** o pega un ID por línea.",
+          "tip": "",
           "image": ""
         },
         {
           "title": "Modo periódico",
-          "body": "Si está disponible, puedes configurar la recolección periódica.",
-          "tip": "Desactiva la tarea si deja de ser necesaria.",
+          "body": "Activa **Auto recolección** para actualizar los IDs en segundo plano. El panel indica un ciclo de 8 segundos. Consulta su estado antes de iniciar un segundo recorrido.",
+          "tip": "",
           "image": ""
         },
         {
@@ -317,14 +479,20 @@
       "features": [
         {
           "title": "Mensajes guardados",
-          "body": "Los paneles Mensaje 1 a 4 permiten configurar respuestas rápidas.",
-          "tip": "Comprueba el texto antes de insertarlo o enviarlo.",
+          "body": "Configura **Mensaje 1** a **Mensaje 4**. Admite las variables **(NOMBRE)**, **(EDAD)**, **(PAIS)**, **(INTERESES)** y **(ESTADO_CIVIL)**. Abre el chat correcto y comprueba cómo queda el texto personalizado en el editor.",
+          "tip": "",
           "image": ""
         },
         {
           "title": "Atajos",
-          "body": "La extensión incluye comandos como Ctrl+1, Ctrl+2 y Ctrl+3, sujetos a disponibilidad y conflictos del navegador.",
-          "tip": "Puedes consultar los atajos activos en chrome://extensions/shortcuts.",
+          "body": "Abre **chrome://extensions/shortcuts** en Chrome y busca Antares Helper. El paquete propone **Ctrl+1**, **Ctrl+2** y **Ctrl+3** para los tres primeros mensajes y **Ctrl+Z** para el traductor. Asigna la combinación del cuarto mensaje en esa pantalla. Chrome muestra qué teclas quedaron disponibles en tu instalación.",
+          "tip": "También puedes asignar comandos independientes para generar desde texto seleccionado, abrir la lista VIP y generar un Mensaje PRO en el chat activo.",
+          "image": ""
+        },
+        {
+          "title": "Configurar el atajo de Mensaje PRO",
+          "body": "Abre un chat y pasa el cursor sobre **💬 Generar mensaje PRO**. Pulsa **⌨ Atajos** y asigna una combinación a **Generar Mensaje PRO para el chat abierto (sin enviar)**. Vuelve al chat y pruébala. El resultado debe aparecer en el cuadro de escritura para revisión.",
+          "tip": "El comando PRO viene sin combinación predeterminada. El botón Traducir también ofrece su propio acceso a Atajos.",
           "image": ""
         }
       ]
@@ -338,14 +506,14 @@
       "features": [
         {
           "title": "Perfil del personaje",
-          "body": "Añade campos como nombre, edad, intereses, biografía y notas para adaptar las sugerencias.",
-          "tip": "Incluye solo información que tengas permiso para utilizar.",
+          "body": "Abre **IA → Perfil del personaje**. Usa **Actualizar desde Mi perfil** para importar los datos de tu perfil de TalkyTimes. El panel indica una sincronización automática cada 24 horas. Revisa nombre, edad, género, destinatario, estado civil, origen, ocupación, situación laboral, intereses y biografía. Pulsa **Guardar perfil** al terminar.",
+          "tip": "Los campos personalizados se conservan al importar. Pueden sincronizarse con la nube cuando esa función está activa.",
           "image": ""
         },
         {
           "title": "Tono y estilo",
-          "body": "Configura mood, idioma y otras preferencias disponibles para personalizar borradores.",
-          "tip": "Verifica siempre hechos y contenido antes de enviarlo.",
+          "body": "Elige el mood y escribe el motivo si ayuda a redactar. En Extras puedes guardar notas, familia, auto y favoritos como libro, serie, color y canción. En el copiloto, **Mejorar último PRO**, **Más coqueto** y **Más corto** permiten ajustar una propuesta.",
+          "tip": "",
           "image": ""
         },
         {
@@ -365,6 +533,18 @@
           "body": "Abre la conversación que quieres responder. Pulsa el botón de Antares para generar una respuesta y lee el borrador en el cuadro de escritura. Puedes editar el texto antes de pulsar Enviar.",
           "tip": "La imagen es una maqueta con datos ficticios. La ubicación de los controles puede variar según la versión.",
           "image": "/media/ejemplo-generar-respuesta.png"
+        },
+        {
+          "title": "Analizar, redactar y romper el hielo",
+          "body": "Desde el chat, la **lupa** analiza el perfil y la conversación. El botón **💬** prepara un mensaje PRO de alrededor de 270 caracteres. Para iniciar un tema, abre **Icebreaker IA**, escoge Chat o Cartas y elige Amor Real, Hablar Caliente o Amistad. Usa **Generar Icebreaker** y revisa el resultado.",
+          "tip": "El copiloto también ofrece **Usar selección**, **Enviar al chat** y **Limpiar**. Comprueba el destinatario antes de usar una acción de envío.",
+          "image": ""
+        },
+        {
+          "title": "Revisar lo que la IA da por hecho",
+          "body": "Si la relación solo existe por chat, comprueba que el borrador respete ese contexto. Revisa referencias a encuentros, contacto físico, apariencia, hora del día y temas ajenos al mensaje. Puedes editar directamente en el cuadro antes de enviar.",
+          "tip": "",
+          "image": ""
         }
       ]
     },
@@ -377,14 +557,14 @@
       "features": [
         {
           "title": "Añadir y consultar",
-          "body": "Mantén una lista de IDs que deban excluirse de los procesos compatibles.",
-          "tip": "Comprueba el efecto sobre cada herramienta; no todos los módulos usan necesariamente los mismos filtros.",
+          "body": "En **Blacklist unificada**, introduce el ID del cliente, pulsa **Añadir** y comprueba el contador de IDs bloqueados. La misma lista excluye al destinatario en **Chat Sender, Mail Sender y Posts Sender**.",
+          "tip": "Usa el ID del cliente. El ID de licencia corresponde al perfil del operador.",
           "image": ""
         },
         {
           "title": "Evitar contactos incorrectos",
-          "body": "Revisa los IDs y elimina errores de la lista antes de iniciar lotes.",
-          "tip": "No introduzcas datos personales innecesarios.",
+          "body": "Antes de iniciar un lote, compara el ID de la lista de destino con el del chat. Si un destinatario se omite, consulta primero la Blacklist y después los filtros específicos del módulo.",
+          "tip": "",
           "image": ""
         }
       ]
@@ -398,20 +578,38 @@
       "features": [
         {
           "title": "Licencia",
-          "body": "Antares asocia funciones disponibles al perfil autorizado de TalkyTimes.",
-          "tip": "Si cambias de perfil, comprueba el estado de activación.",
+          "body": "La prueba dura **48 horas** y se concede una vez por ID, incluso tras reinstalar. Con Plus se habilitan Scraper y Bot. Premium añade Chat Sender, Mail Sender y Posts Sender. Los audios favoritos admiten Plus, Premium y prueba activa. En **Cuenta** puedes consultar el ID vinculado, estado del servicio, plan, dispositivo, vigencia y tiempo restante.",
+          "tip": "",
           "image": ""
         },
         {
           "title": "Diagnóstico",
-          "body": "Permite generar informes técnicos para investigar problemas de contadores, colores o comunicaciones.",
-          "tip": "Antes de compartir un informe, revisa si contiene datos sensibles.",
+          "body": "En **Diagnóstico de fallas**, consulta los eventos técnicos guardados localmente. **Exportar informe JSON** descarga el registro para revisarlo o compartirlo con soporte. **Borrar registros** limpia ese historial.",
+          "tip": "El informe técnico es distinto de la exportación de una conversación a TXT.",
           "image": ""
         },
         {
           "title": "Alertas y sonidos",
-          "body": "Puedes ajustar alertas y volumen para determinados eventos.",
-          "tip": "Configura solo los avisos que necesites.",
+          "body": "Abre **Cuenta → Sonido**. El radar VIP permite elegir entre tres tonos y ajustar su volumen. Puedes probar por separado **Sonido VIP**, **Mensaje** y **Nuevo Chat**. Los avisos de mensajes y chats nuevos utilizan el control de volumen de notificaciones.",
+          "tip": "",
+          "image": ""
+        },
+        {
+          "title": "Solicitar activación o renovación",
+          "body": "El panel de esta versión muestra Plus desde **US$1,50 por semana** y Premium desde **US$2,00 por semana**. El selector ofrece semana, mes, trimestre, semestre y año. Muestra el total y los descuentos por duración antes de abrir WhatsApp con la solicitud y el ID de perfil.",
+          "tip": "Para comprobar el servicio de IA por separado, pulsa **Comprobar acceso a IA**.",
+          "image": ""
+        },
+        {
+          "title": "Estado de instalación y sincronización",
+          "body": "El estado de instalación registra actividad de la extensión, versión y perfil detectado. El indicador de nube informa de la sincronización vinculada a la cuenta. Si cambias de PC, comprueba el ID activo y el estado de la nube antes de usar los datos recuperados.",
+          "tip": "Los favoritos de audio guardan su copia reproducible en el navegador donde se creó.",
+          "image": ""
+        },
+        {
+          "title": "Qué información puede recuperar la nube",
+          "body": "Con la sincronización activa, Antares combina datos del perfil del personaje, notas CRM, lista VIP, plantillas de chat y de cartas y preferencias compatibles. Verifica el estado en Cuenta al cambiar de equipo.",
+          "tip": "",
           "image": ""
         }
       ]
@@ -451,6 +649,30 @@
           "title": "Borradores repetidos",
           "body": "Selecciona el modo de IA con revisión, comprueba el historial antes de aprobar y evita relanzar lotes dudosos.",
           "tip": "No confundas “texto exacto” con generación de variantes.",
+          "image": ""
+        },
+        {
+          "title": "No encuentro un audio o no se reproduce",
+          "body": "Comprueba el perfil, borra el filtro de búsqueda y busca por una parte distintiva del nombre. Para una copia vencida, reproduce el original y pulsa ↻. Para adjuntarlo, vuelve al selector del chat y espera la confirmación de selección. [Ver Audios favoritos](#audios).",
+          "tip": "",
+          "image": ""
+        },
+        {
+          "title": "El atajo genera otra acción o no hace nada",
+          "body": "Comprueba el comando y la combinación asignada en chrome://extensions/shortcuts. Prueba primero el botón manual con el chat abierto. Para PRO elige el comando del chat abierto, para traducir un borrador escribe primero en el editor. [Ver AVR y atajos](#avr).",
+          "tip": "",
+          "image": ""
+        },
+        {
+          "title": "No inicia un lote de cartas o posts",
+          "body": "Comprueba la licencia Premium o la prueba activa, los IDs de clientes y el contador de texto. En cartas se necesitan 150 caracteres como mínimo. En posts se requieren 100–3500 caracteres y cuatro fotos Basic. Si el último intento quedó sin confirmar, revisa el historial del cliente antes de reanudar.",
+          "tip": "",
+          "image": ""
+        },
+        {
+          "title": "La recarga parece detenida",
+          "body": "Lee el estado del contador. Si indica Buscando audios, Escaneando READ o Borrador o audio, termina esa operación para que pueda continuar. Si la pausa es manual, usa el control de reanudación. [Ver Bandejas y recarga](#bandejas).",
+          "tip": "",
           "image": ""
         }
       ]
