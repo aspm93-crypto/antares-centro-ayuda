@@ -7,7 +7,7 @@ main{max-width:780px;width:100%;text-align:center}header{display:flex;align-item
 .eyebrow{text-transform:uppercase;letter-spacing:.19em;font-size:12px;font-weight:800;color:#7fd8ee}h1{font-size:clamp(32px,5.5vw,52px);line-height:1.14;letter-spacing:-.045em;margin:12px 0 16px}.intro{max-width:625px;margin:0 auto 30px;color:var(--muted);font-size:17px}
 .panel{text-align:left;border:1px solid #2b3f60;background:linear-gradient(140deg,#14253c,#111a2e);padding:clamp(22px,4vw,36px);border-radius:22px;box-shadow:0 24px 64px #0005}
 .panel small{color:#76d9f3;font-weight:800;letter-spacing:.11em;text-transform:uppercase;font-size:12px}h2{font-size:clamp(23px,4vw,31px);line-height:1.2;letter-spacing:-.03em;margin:12px 0} .panel p{color:#b9c7da;margin:0 0 18px}
-.features{list-style:none;padding:0;margin:16px 0 26px;display:grid;gap:10px}.features li{display:flex;gap:11px;align-items:center;color:#e5eefc;font-size:15px}.tick{display:grid;place-items:center;min-width:21px;height:21px;border-radius:50%;background:#2ac5ae24;color:#57dec9;font-size:14px;font-weight:900}
+.features-heading{margin:22px 0 8px;color:#f6f8ff;font-size:17px}.features{list-style:none;padding:0;margin:16px 0 26px;display:grid;gap:10px}.features li{display:flex;gap:11px;align-items:center;color:#e5eefc;font-size:15px}.tick{display:grid;place-items:center;min-width:21px;height:21px;border-radius:50%;background:#2ac5ae24;color:#57dec9;font-size:14px;font-weight:900}
 .cta{display:flex;justify-content:center;align-items:center;gap:10px;background:linear-gradient(110deg,#ffac30,#ffe08a);border-radius:12px;color:#15141b;text-decoration:none;padding:17px 22px;box-shadow:0 9px 32px #ffa93136;font-size:16px;font-weight:850;text-align:center;transition:transform .15s}.cta:hover{transform:translateY(-2px)}.cta:focus-visible,a:focus-visible{outline:3px solid #64e6ff;outline-offset:3px}
 .foot{display:flex;justify-content:center;gap:20px;flex-wrap:wrap;margin-top:27px;color:var(--muted);font-size:13px}.foot a{color:#a4dff7;text-decoration:underline;text-underline-offset:3px}
 @media(prefers-reduced-motion:reduce){.cta{transition:none}}@media(max-width:500px){header{font-size:19px}.panel{text-align:left}.intro{font-size:15px}.cta{font-size:15px}}
@@ -18,10 +18,23 @@ main{max-width:780px;width:100%;text-align:center}header{display:flex;align-item
 <p class="intro">Sentimos que hayas desinstalado <strong>Antares Helper</strong>. Gracias por habernos dado una oportunidad. Seguiremos mejorando nuestras herramientas.</p>
 <section class="panel" aria-label="Otra extensión de Antares">
 <small>Descubre otra herramienta de Antares</small>
-<h2>Antares Auto-Cycler</h2>
-<p>Automatiza ciclos de navegación en TalkyTimes con controles de inicio, pausa y estadísticas.</p>
-<ul class="features"><li><span class="tick" aria-hidden="true">✓</span><span>Ciclos configurables y reanudación</span></li><li><span class="tick" aria-hidden="true">✓</span><span>Filtros y controles de ejecución</span></li><li><span class="tick" aria-hidden="true">✓</span><span>Seguimiento de resultados</span></li></ul>
+<h2>Antares Auto-Cycler — Gestión automatizada de ciclos en TalkyTimes</h2>
+<p>Ciclos configurables en TalkyTimes con likes a perfiles y fotos, follows, estadísticas, pausas y reanudación al abrir Chrome.</p>
+<p>Antares Auto-Cycler permite configurar y administrar ciclos de navegación e interacción en TalkyTimes desde una interfaz sencilla.</p>
+<h3 class="features-heading">Funciones principales</h3>
+<ul class="features">
+<li><span class="tick" aria-hidden="true">✓</span><span>Búsqueda y recopilación de perfiles mediante ciclos configurables.</span></li>
+<li><span class="tick" aria-hidden="true">✓</span><span>Opciones de likes, likes en fotografías y follows.</span></li>
+<li><span class="tick" aria-hidden="true">✓</span><span>Filtro para trabajar únicamente con perfiles conectados.</span></li>
+<li><span class="tick" aria-hidden="true">✓</span><span>Configuración de páginas, intervalos de pausa y velocidad.</span></li>
+<li><span class="tick" aria-hidden="true">✓</span><span>Configuración de perfiles en simultáneo y velocidad de interacción.</span></li>
+<li><span class="tick" aria-hidden="true">✓</span><span>Estadísticas de perfiles encontrados y acciones realizadas.</span></li>
+<li><span class="tick" aria-hidden="true">✓</span><span>Exportación del historial en formato CSV.</span></li>
+<li><span class="tick" aria-hidden="true">✓</span><span>Conservación de los últimos ajustes.</span></li>
+<li><span class="tick" aria-hidden="true">✓</span><span>Reanudación de ciclos al volver a abrir Chrome, siempre que no se hayan detenido previamente.</span></li>
+<li><span class="tick" aria-hidden="true">✓</span><span>Controles para iniciar y detener las operaciones.</span></li>
+</ul>
 <a class="cta" href="https://chromewebstore.google.com/detail/talkytimes-auto-cycler-v2/hfdmoahodogomlkhogbjhjjdheeadiec" target="_blank" rel="noopener noreferrer" aria-label="Explorar Antares Auto-Cycler en Chrome Web Store">Explorar Antares Auto-Cycler <span aria-hidden="true">↗</span></a>
 </section>
 <nav class="foot" aria-label="Enlaces"><span>Producto independiente de TalkyTimes</span><a href="mailto:antaresagency93@gmail.com?subject=Comentarios%20sobre%20Antares%20Helper">Enviar comentarios</a></nav>
-</main><script>(()=>{try{const x=new URLSearchParams(location.hash.slice(1));history.replaceState(null,'',location.pathname+location.search);const installation_id=x.get('installation_id')||'';const token=x.get('token')||'';if(!/^[0-9a-f]{8}-[0-9a-f]{4}-4[0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/i.test(installation_id)||!/^[0-9a-f]{64}$/.test(token))return;fetch('https://ljupumjlskcrnohonies.supabase.co/functions/v1/antares-statistics',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({action:'uninstall',installation_id,token}),keepalive:true}).catch(()=>{});}catch(_){}})();</script></body></html>
+</main><script src="./uninstall.js" defer></script></body></html>
