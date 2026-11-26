@@ -7,6 +7,16 @@ main{max-width:780px;width:100%;text-align:center}header{display:flex;align-item
 .eyebrow{text-transform:uppercase;letter-spacing:.19em;font-size:12px;font-weight:800;color:#7fd8ee}h1{font-size:clamp(32px,5.5vw,52px);line-height:1.14;letter-spacing:-.045em;margin:12px 0 16px}.intro{max-width:625px;margin:0 auto 30px;color:var(--muted);font-size:17px}
 .panel{text-align:left;border:1px solid #2b3f60;background:linear-gradient(140deg,#14253c,#111a2e);padding:clamp(22px,4vw,36px);border-radius:22px;box-shadow:0 24px 64px #0005}
 .panel small{color:#76d9f3;font-weight:800;letter-spacing:.11em;text-transform:uppercase;font-size:12px}h2{font-size:clamp(23px,4vw,31px);line-height:1.2;letter-spacing:-.03em;margin:12px 0} .panel p{color:#b9c7da;margin:0 0 18px}
+.promo-lead{font-weight:650;color:#d8efff!important}
+.features-heading{margin:25px 0 14px;font-size:18px;color:#90e6fc;letter-spacing:.04em;text-transform:uppercase}
+.feature-sections{display:grid;gap:13px;margin:0 0 26px}
+.feature-section{border:1px solid rgba(127,216,238,.15);border-radius:14px;padding:16px 18px;background:rgba(9,18,31,.28)}
+.feature-section h4{display:flex;align-items:center;gap:10px;font-size:18px;line-height:1.35;margin:0 0 10px}
+.feature-emoji{font-size:23px}
+.feature-section p{font-size:14px;line-height:1.65;margin:9px 0!important;color:#bfcee2}
+.feature-section .features{margin:12px 0 8px}
+.feature-section .features li{align-items:flex-start;font-size:14px;line-height:1.5}
+.feature-section .tick{margin-top:2px}
 .features{list-style:none;padding:0;margin:16px 0 26px;display:grid;gap:10px}.features li{display:flex;gap:11px;align-items:center;color:#e5eefc;font-size:15px}.tick{display:grid;place-items:center;min-width:21px;height:21px;border-radius:50%;background:#2ac5ae24;color:#57dec9;font-size:14px;font-weight:900}
 .cta{display:flex;justify-content:center;align-items:center;gap:10px;background:linear-gradient(110deg,#ffac30,#ffe08a);border-radius:12px;color:#15141b;text-decoration:none;padding:17px 22px;box-shadow:0 9px 32px #ffa93136;font-size:16px;font-weight:850;text-align:center;transition:transform .15s}.cta:hover{transform:translateY(-2px)}.cta:focus-visible,a:focus-visible{outline:3px solid #64e6ff;outline-offset:3px}
 .foot{display:flex;justify-content:center;gap:20px;flex-wrap:wrap;margin-top:27px;color:var(--muted);font-size:13px}.foot a{color:#a4dff7;text-decoration:underline;text-underline-offset:3px}
@@ -19,8 +29,62 @@ main{max-width:780px;width:100%;text-align:center}header{display:flex;align-item
 <section class="panel" aria-label="Otra extensión de Antares">
 <small>Descubre otra herramienta de Antares</small>
 <h2>Antares Helper</h2>
-<p>Organiza conversaciones, traducciones y herramientas de productividad para TalkyTimes desde una sola extensión.</p>
-<ul class="features"><li><span class="tick" aria-hidden="true">✓</span><span>Filtros y organización de chats</span></li><li><span class="tick" aria-hidden="true">✓</span><span>Asistencia de IA y traducciones</span></li><li><span class="tick" aria-hidden="true">✓</span><span>Planes Plus y Premium</span></li></ul>
+<p class="promo-lead">Herramientas para TalkyTimes: filtros, borradores revisables, traducción, mensajes y tareas automatizadas.</p>
+<p><strong>Antares Helper</strong> es una extensión independiente diseñada para mejorar la productividad, seguridad y organización de conversaciones en TalkyTimes.</p>
+<h3 class="features-heading">Funciones principales</h3>
+<div class="feature-sections">
+<section class="feature-section">
+<h4><span class="feature-emoji" aria-hidden="true">🛡️</span>Filtro global de seguridad</h4>
+<p>Sistema configurable para detectar y bloquear mensajes que contengan palabras prohibidas o solicitudes potencialmente indebidas antes de enviarlos por chat, cartas o publicaciones.</p>
+<p>Incluye reglas para detectar solicitudes de teléfonos, correos electrónicos, contactos externos, dinero, regalos y encuentros presenciales.</p>
+<p>Permite añadir palabras personalizadas, comprobar textos y recibir alertas de seguridad.</p>
+
+
+</section>
+<section class="feature-section">
+<h4><span class="feature-emoji" aria-hidden="true">💚</span>Detección de chats que facturan y chats perdidos</h4>
+<p>Antares Helper incorpora un sistema inteligente de identificación visual de conversaciones mediante colores e indicadores.</p>
+<ul class="features"><li><span class="tick" aria-hidden="true">✓</span><span><strong>💚 Chat que factura:</strong> identifica con fondo verde las conversaciones en la lista de chat que generan ingresos, incluidas aquellas que facturan sin generar notificaciones (audio, carta o post leído).</span></li>
+<li><span class="tick" aria-hidden="true">✓</span><span><strong>🔴 Chat perdido:</strong> destaca con fondo rojo e icono de advertencia las conversaciones que requieren atención cuando un mensaje recibido sigue sin respuesta después de 3 minutos.</span></li></ul>
+<p>Los indicadores se actualizan conforme cambian las condiciones de cada conversación y ayudan a priorizar contactos. Son indicadores operativos, no certificaciones de ingresos ni pagos.</p>
+</section>
+<section class="feature-section">
+<h4><span class="feature-emoji" aria-hidden="true">🤖</span>Inteligencia artificial y redacción</h4>
+<p>Botón especial en Mails — Active Limits que detecta las cartas marcadas como «Read» en todas las páginas.</p>
+<p>Asistente de IA para preparar respuestas y borradores personalizados que el usuario puede revisar antes de enviarlos.</p>
+<p>Incluye herramientas de redacción, 200 temas de conversación y funciones para reducir mensajes repetitivos.</p>
+
+
+</section>
+<section class="feature-section">
+<h4><span class="feature-emoji" aria-hidden="true">💬</span>Gestión de conversaciones</h4>
+
+<ul class="features"><li><span class="tick" aria-hidden="true">✓</span><span>Traducción de textos y mensajes en diferentes idiomas.</span></li>
+<li><span class="tick" aria-hidden="true">✓</span><span>Refresco automático de página configurable.</span></li>
+<li><span class="tick" aria-hidden="true">✓</span><span>Atajos personalizados y plantillas.</span></li>
+<li><span class="tick" aria-hidden="true">✓</span><span>Identificación visual mediante colores e iconos.</span></li>
+<li><span class="tick" aria-hidden="true">✓</span><span>Organización de contactos, listas y perfiles.</span></li>
+<li><span class="tick" aria-hidden="true">✓</span><span>Comprobación de actividad reciente en las conversaciones.</span></li></ul>
+
+</section>
+<section class="feature-section">
+<h4><span class="feature-emoji" aria-hidden="true">📨</span>Herramientas de envío</h4>
+<p>Preparación y gestión de mensajes y borradores con controles de inicio y detención.</p>
+<p>Incluye funciones de envío por lotes iniciadas por el usuario, prevención de mensajes duplicados, comprobaciones de inactividad y seguimiento del progreso.</p>
+<p>Algunos modos requieren revisión y aprobación de los borradores antes de enviarlos.</p>
+
+
+</section>
+<section class="feature-section">
+<h4><span class="feature-emoji" aria-hidden="true">⚙️</span>Herramientas adicionales</h4>
+
+<ul class="features"><li><span class="tick" aria-hidden="true">✓</span><span>Auto Cycler con controles configurables.</span></li>
+<li><span class="tick" aria-hidden="true">✓</span><span>Scraper para recopilar información disponible en la sesión del usuario.</span></li>
+<li><span class="tick" aria-hidden="true">✓</span><span>Filtros y preferencias personalizables.</span></li>
+<li><span class="tick" aria-hidden="true">✓</span><span>Notificaciones flotantes sobre el estado de los procesos.</span></li></ul>
+
+</section>
+</div>
 <a class="cta" href="https://chromewebstore.google.com/detail/antares-helper/aejfcbeboafobmoghgmbblajlacijkpa" target="_blank" rel="noopener noreferrer" aria-label="Explorar Antares Helper en Chrome Web Store">Explorar Antares Helper <span aria-hidden="true">↗</span></a>
 </section>
 <nav class="foot" aria-label="Enlaces"><span>Producto independiente de TalkyTimes</span><a href="mailto:antaresagency93@gmail.com?subject=Comentarios%20sobre%20Antares%20Auto-Cycler">Enviar comentarios</a></nav>
